@@ -1,2 +1,25 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+//pseudocode
+
+1. Initialize an empty result array
+2. Loop through the string using index i
+3. For each i, build substrings by looping from i to end
+4. Add each substring to the result array
+5. Return the result array
+
+
+//explanation
+The solution generates all consecutive substrings of a given string by using two nested loops.
+The outer loop selects the starting index of the substring.
+The inner loop builds substrings by extending from the starting index to the end of the string.
+Each generated substring is added to the result array in order.
+
+Time Complexity:
+O(n^2), where n is the length of the input string.
+This is because for each character, we iterate through the remaining characters to form substrings.
+
+Space Complexity:
+O(n^2), as all generated substrings are stored in an array.
+
